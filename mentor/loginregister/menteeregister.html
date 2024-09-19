@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mentee Registration</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .image-container {
+        width: 50vw;
+        height: 50vh;
+        background: url(forloginpage.png) no-repeat center;
+        background-blend-mode: multiply;
+        background-size: contain;
+      }
+
+      .container {
+        width: 40vw;
+        padding: 5vh;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: auto;
+      }
+
+      button {
+        background-color: #004792;
+        color: white;
+        border: none;
+        padding: 2vh 4vw;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #003366;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-bottom: 1vh;
+      }
+
+      input[type="email"],
+      input[type="password"],
+      input[type="text"] {
+        margin-bottom: 2vh;
+        padding: 1.5vh;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      button[type="submit"] {
+        background-color: #004792;
+        padding: 2vh;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #218838;
+      }
+
+      a {
+        text-decoration: underline;
+        color: #004792;
+        margin-top: 1.5vh;
+        font-size: 1.1rem;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      #password-error {
+        color: red;
+        display: none;
+        margin-bottom: 2vh;
+      }
+
+      @media (max-width: 768px) {
+        .image-container {
+          display: none;
+        }
+
+        .container {
+          width: 90vw;
+          margin: auto;
+        }
+
+        button {
+          padding: 2vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container"></div>
+
+    <div class="container">
+      <h2>Mentee Registration</h2>
+      <form onsubmit="return validatePasswords()">
+        <label for="mentee-email">Email:</label>
+        <input type="email" id="mentee-email" name="mentee-email" required />
+
+        <label for="mentee-password">Password:</label>
+        <input type="password" id="mentee-password" name="mentee-password" required />
+
+        <label for="mentee-confirm-password">Confirm Password:</label>
+        <input type="text" id="mentee-confirm-password" name="mentee-confirm-password" required />
+
+        <span id="password-error">Passwords should match</span>
+
+        <button type="submit">Register</button>
+      </form>
+
+      <a href="login _reg_page.html">Already registered? Log in</a>
+    </div>
+
+    <script>
+      function validatePasswords() {
+        const password = document.getElementById('mentee-password').value;
+        const confirmPassword = document.getElementById('mentee-confirm-password').value;
+        const errorSpan = document.getElementById('password-error');
+
+        if (password !== confirmPassword) {
+          errorSpan.style.display = 'block';
+          return false; // Prevent form submission
+        } else {
+          errorSpan.style.display = 'none';
+          return true; // Allow form submission
+        }
+      }
+    </script>
+  </body>
+</html>

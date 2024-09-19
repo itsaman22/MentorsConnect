@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .image-container {
+        width: 50vw;
+        height: 50vh;
+        background: url(forloginpage.png) no-repeat center;
+        background-blend-mode: multiply;
+        background-size: contain;
+      }
+
+      .container {
+        width: 40vw;
+        padding: 5vh;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: auto;
+      }
+
+      .top-options {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+      }
+
+      button {
+        background-color: #004792;
+        color: white;
+        border: none;
+        padding: 2vh 4vw;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #003366;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-bottom: 1vh;
+      }
+
+      input[type="email"],
+      input[type="password"] {
+        margin-bottom: 2vh;
+        padding: 1.5vh;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      button[type="submit"] {
+        background-color:#004792;
+        padding: 2vh;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #218838;
+      }
+
+      a {
+        text-decoration: underline;
+        color: #004792;
+        margin-top: 1.5vh;
+        font-size: 1.1rem;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .image-container {
+          display: none;
+        }
+
+        .container {
+          width: 90vw;
+          margin: auto;
+        }
+
+        button {
+          padding: 2vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container"></div>
+
+    <div class="container">
+      <div class="top-options">
+        <button class="mentee-btn">I am a mentee</button>
+        <button class="mentor-btn">I am a mentor</button>
+      </div>
+
+      <div class="mentee-form hidden">
+        <h2>Mentee Login</h2>
+        <form>
+          <label for="mentee-email">Email:</label>
+          <input type="email" id="mentee-email" name="mentee-email" required />
+
+          <label for="mentee-password">Password:</label>
+          <input
+            type="password"
+            id="mentee-password"
+            name="mentee-password"
+            required
+          />
+
+          <button type="submit">Login</button>
+        </form>
+
+        <a href="menteeregister.html">Register as a mentee</a>
+      </div>
+
+      <div class="mentor-form hidden">
+        <h2>Mentor Login</h2>
+        <form>
+          <label for="mentor-email">Email:</label>
+          <input type="email" id="mentor-email" name="mentor-email" required />
+
+          <label for="mentor-password">Password:</label>
+          <input
+            type="password"
+            id="mentor-password"
+            name="mentor-password"
+            required
+          />
+
+          <button type="submit">Login</button>
+        </form>
+
+        <a href="mentor1.html">Apply as a mentor</a>
+      </div>
+    </div>
+    <script>
+      // Login aur register ka code
+      const menteeBtn = document.querySelector(".mentee-btn");
+      const mentorBtn = document.querySelector(".mentor-btn");
+      const menteeForm = document.querySelector(".mentee-form");
+      const mentorForm = document.querySelector(".mentor-form");
+
+      menteeBtn.addEventListener("click", () => {
+        menteeForm.classList.remove("hidden");
+        mentorForm.classList.add("hidden");
+      });
+
+      mentorBtn.addEventListener("click", () => {
+        mentorForm.classList.remove("hidden");
+        menteeForm.classList.add("hidden");
+      });
+    </script>
+  </body>
+</html>

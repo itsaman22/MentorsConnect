@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentor Connect</title>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+  }
+
+  .image-container {
+    width: 40vw;
+    height: 100vh;
+    position: fixed;
+    top: 17vh;
+    left: 0;
+  }
+
+  .image-container img {
+    margin-top: 16vh;
+    width: 100%;
+    height:60vh;
+    object-fit: contain;
+  }
+
+  main {
+    margin-left: 40vw;
+    padding: 2rem;
+    height: 100vh;
+    width: 60vw;
+  }
+
+  /* Progress bar adjustments */
+  .progress {
+    margin-top: 0; /* Aligned to the top of the form */
+    margin-bottom: 2rem;
+  }
+
+  /* Header */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  .status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .status-item {
+    position: relative;
+    text-align: center;
+  }
+
+  .status-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+
+  .status-item.active .status-circle {
+    border-color: teal;
+    background-color: teal;
+    color: white;
+    line-height: 20px;
+  }
+
+  .status-label {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn a {
+    text-decoration: none;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .btn a:hover {
+    background-color: #004276;
+  }
+
+  /* Navbar styles */
+
+</style>
+<body>
+  <div class="container">
+    <div class="image-container">
+      <img src="forloginpage.png" alt="Background Image">
+    </div>
+
+    <main>
+      <div class="progress">
+        <h1>Apply as a mentor</h1>
+        <ul class="status-bar">
+          <li class="status-item">
+            <div class="status-circle"></div>
+            <div class="status-label">About you</div>
+          </li>
+          <li class="status-item active">
+            <div class="status-circle"></div>
+            <div class="status-label">Profile</div>
+          </li>
+          <li class="status-item">
+            <div class="status-circle"></div>
+            <div class="status-label">Experience</div>
+          </li>
+        </ul>
+      </div>
+
+      <form action="#">
+        <label for="dropdown1">Category</label><br>
+        <select id="dropdown1">
+          <option value="ML Engineer">ML Engineer</option>
+          <option value="Data Scientist">Data Scientist</option>
+          <option value="Developer">Developer</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Career coach">Career coach</option>
+        </select><br><br>
+
+        <label for="skill">Skill</label><br>
+        <input type="text" name="skill" id="skill" placeholder="    Add Skills" /><br>
+
+        <p>Describe your expertise to connect with mentees who have similar interests</p>
+        <p>Comma-separated list of your skills (keep it below ten). Mentees will use this to find you.</p>
+
+        <label for="bio">Bio</label><br>
+        <textarea name="bio" id="bio" placeholder="    Write Something about you"></textarea><br>
+
+        <p>Tell us (and your mentees) a little bit about yourself. Talk about yourself as though you’re directly talking to your mentee. This will be public.</p>
+
+        <label for="linkedin">LinkedIn URL</label><br>
+        <input type="text" name="linkedin" id="linkedin"><br><br>
+
+        <label for="twitter">Twitter (optional)</label><br>
+        <input type="text" name="twitter" id="twitter"><br><br>
+
+        <label for="web">Personal Website (optional)</label><br>
+        <input type="text" name="web" id="web"><br><br>
+
+        <div class="btn">
+          <a href="mentor1.html" class="button" id="Previous">Previous Step</a>
+          <a href="mentor3.html" class="button" id="Next">Next Step</a>
+        </div>
+      </form>
+    </main>
+  </div>
+</body>
+</html>

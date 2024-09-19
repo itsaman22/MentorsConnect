@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="frontpage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font  -->
+    <script src="https://kit.fontawesome.com/5dbdfc7f6d.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <header>
+        <div class="logo">
+          <a href=""
+            ><img src="images/MAIN_LOGO_MENTOR_CONNECT.jpg" alt="Logo"
+          /></a>
+        </div>
+        <nav>
+          <ul>
+            <li class="rightside"><a href="frontpage.html">Home</a></li>
+            <li class="rightside"><a href="#">About</a></li>
+            <li class="rightside"><a href="#">Features</a></li>
+            <li class="rightside"><a href="#">Contact Us</a></li>
+            <a href="login/login _reg_page.html"><button class="LoginButton">Login/Register</button></a>
+
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+      <!-- Sliding Bar -->
+      <div class="carousel-container">
+        <div class="slides">
+            <!-- First slide -->
+            <div class="slide">
+                <img src="https://via.placeholder.com/1200x300/FF5733/FFFFFF?text=Slide+1" alt="Slide 1">
+            </div>
+            <!-- Second slide -->
+            <div class="slide">
+                <img src="https://via.placeholder.com/1200x300/33FF57/FFFFFF?text=Slide+2" alt="Slide 2">
+            </div>
+            <!-- Third slide -->
+            <div class="slide">
+                <img src="https://via.placeholder.com/1200x300/5733FF/FFFFFF?text=Slide+3" alt="Slide 3">
+            </div>
+        </div>
+    
+        <!-- Navigation Arrows -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    
+    <!-- Dots for slide indication -->
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+    
+
+    <!-- Main Section hai -->
+    <div class="hero">
+      <div class="container">
+        <div class="hero-left">
+          <h1>Guiding You To Success Through <span id="element"></span></h1>
+          <a href="login/login _reg_page.html"><button  type="submit">Get Started</button></a>
+
+
+        </div>
+        <div class="hero-right">
+          <img src="images/heroimage.png" alt=" Image" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Mentors sectons  -->
+    <div class="guides-section">
+        <h2>Top Mentors to Learn From</h2>
+        <div class="guides-features">
+            <div><i class="icon-check"></i> Proven history of delivering results</div>
+            <div><i class="icon-check"></i> Mentored top rankers</div>
+            <div><i class="icon-check"></i> Unique style of Guiding</div>
+        </div>
+    
+        <div class="guides-list">
+            <!-- Guide 1 -->
+            <div class="guide-card">
+                <div class="guide-image">
+                    <img src="images/akshaypic.jpg" alt="Brijesh Jindal">
+                    <span class="guide-badge">LEGEND</span>
+                </div>
+                <div class="guide-info">
+                    <h3>Brijesh Jindal</h3>
+                    <p>The topmost Physical chemistry educator, BJ sir mentored many top rankers including AIR-1...</p>
+                    <div class="guide-stats">
+                        <span>225M Watch Mins</span>
+                        <span>86K Followers</span>
+                    </div>
+                    <a href="#" class="view-profile">View Profile</a>
+                </div>
+            </div>
+    
+            <!-- Guide 2 -->
+            <div class="guide-card">
+                <div class="guide-image">
+                    <img src="images/image5.jpeg" alt="Vineet Loomba">
+                    <span class="guide-badge">LEGEND</span>
+                </div>
+                <div class="guide-info">
+                    <h3>Vineet Loomba</h3>
+                    <p>A game-changer in Mathematics, produced 100 percentilers multiple times...</p>
+                    <div class="guide-stats">
+                        <span>254M Watch Mins</span>
+                        <span>157K Followers</span>
+                    </div>
+                    <a href="#" class="view-profile">View Profile</a>
+                </div>
+            </div>
+    
+            <!-- Guide 3 -->
+            <div class="guide-card">
+                <div class="guide-image">
+                    <img src="images/image2.jpg" alt="Vineet Loomba">
+                    <span class="guide-badge">LEGEND</span>
+                </div>
+                <div class="guide-info">
+                    <h3>Vineet Loomba</h3>
+                    <p>A game-changer in Mathematics, produced 100 percentilers multiple times...</p>
+                    <div class="guide-stats">
+                        <span>254M Watch Mins</span>
+                        <span>157K Followers</span>
+                    </div>
+                    <a href="#" class="view-profile">View Profile</a>
+                </div>
+            </div>
+    
+            <!-- Guide 4 -->
+            <div class="guide-card">
+                <div class="guide-image">
+                    <img src="images/image4.jpeg" alt="Vineet Loomba">
+                    <span class="guide-badge">LEGEND</span>
+                </div>
+                <div class="guide-info">
+                    <h3>Vineet Loomba</h3>
+                    <p>A game-changer in Mathematics, produced 100 percentilers multiple times...</p>
+                    <div class="guide-stats">
+                        <span>254M Watch Mins</span>
+                        <span>157K Followers</span>
+                    </div>
+                    <a href="#" class="view-profile">View Profile</a>
+                </div>
+            </div>
+    
+            <!-- Guide 5 -->
+            <div class="guide-card">
+                <div class="guide-image">
+                    <img src="images/image4.jpeg" alt="Vineet Loomba">
+                    <span class="guide-badge">LEGEND</span>
+                </div>
+                <div class="guide-info">
+                    <h3>Vineet Loomba</h3>
+                    <p>A game-changer in Mathematics, produced 100 percentilers multiple times...</p>
+                    <div class="guide-stats">
+                        <span>254M Watch Mins</span>
+                        <span>157K Followers</span>
+                    </div>
+                    <a href="#" class="view-profile">View Profile</a>
+                </div>
+            </div>
+    
+            <!-- Guide 6 -->
+            <div class="guide-card">
+                <div class="guide-image">
+                    <img src="images/akshaypic.jpg" alt="Vineet Loomba">
+                    <span class="guide-badge">LEGEND</span>
+                </div>
+                <div class="guide-info">
+                    <h3>Vineet Loomba</h3>
+                    <p>A game-changer in Mathematics, produced 100 percentilers multiple times...</p>
+                    <div class="guide-stats">
+                        <span>254M Watch Mins</span>
+                        <span>157K Followers</span>
+                    </div>
+                    <a href="#" class="view-profile">View Profile</a>
+                </div>
+            </div>
+    
+            <!-- Repeat similar blocks for other guides -->
+        </div>
+    
+        <a href="#" class="view-all-btn">View all Mentors</a>
+    </div>
+    
+
+    <!-- Things jo hmare sessions me hongi -->
+
+    <div class="features-section">
+        <div class="feature-card">
+            <img src="https://via.placeholder.com/50/FF5733/FFFFFF?text=LIVE" alt="Live Classes">
+            <h3>Daily Live</h3>
+            <p>Interactive classes</p>
+        </div>
+        <div class="feature-card">
+            <img src="https://via.placeholder.com/50/33FF57/FFFFFF?text=10M+" alt="Tests">
+            <h3>Free</h3>
+            <p>Demo Sessions</p>
+        </div>
+        <div class="feature-card">
+            <img src="https://via.placeholder.com/50/5733FF/FFFFFF?text=24x7" alt="Support">
+            <h3>24 x 7</h3>
+            <p>Doubt Solving</p>
+        </div>
+        <div class="feature-card">
+            <img src="https://via.placeholder.com/50/FFC300/FFFFFF?text=100+" alt="Offline Centres">
+            <h3>Domain</h3>
+            <p>Specific Mentoring</p>
+        </div>
+    </div>
+
+    <!-- Become a mentor secton  -->
+    <section class="mentor-section">
+        <div class="container">
+          <!-- Left Side: Text Content -->
+          <div class="mentor-text">
+            <h1>Become a Mentor<br>& Guide <span>Talent!</span></h1>
+            <p>Join the community of mentors & empower future leaders.</p>
+            <a href="login/login _reg_page.html" class="cta-button">Be a Mentor <span>&#x2192;</span></a>
+          </div>
+      
+          <!-- Right Side: Image -->
+          <div class="mentor-image">
+            <img src="images/for become mentor.avif" alt="Mentor Sessions">
+          </div>
+        </div>
+      </section>
+
+      <!-- Faq Section -->
+      <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What is Mentor Connect?</span>
+                    <i class="faq-icon">+</i>
+                </div>
+                <div class="faq-answer">
+                    <p>Mentor Connect is a platform that connects mentees with industry experts for guidance, skill development, and career advice through scheduled video sessions.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How can I book a session with a mentor?</span>
+                    <i class="faq-icon">+</i>
+                </div>
+                <div class="faq-answer">
+                    <p>Simply sign up, browse through the list of available mentors, and use the integrated calendar to book a video session based on your availability.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Is the service free of charge?</span>
+                    <i class="faq-icon">+</i>
+                </div>
+                <div class="faq-answer">
+                    <p>Mentor Connect offers both free and paid mentoring sessions depending on the mentor's availability and expertise.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can I become a mentor?</span>
+                    <i class="faq-icon">+</i>
+                </div>
+                <div class="faq-answer">
+                    <p>If you are an expert in your field and wish to share your knowledge, you can apply to become a mentor by filling out a simple application form on our website.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer style="background-color: #004792; padding: 20px; text-align: center; color: #ffffff;">
+        <p>&copy; 2023 Mentors Connect</p>
+        <p>Contact Us: <a href="mailto:info@mentorsconnect.com" style="color: #ffffff;">info@mentorsconnect.com</a></p>
+      </footer>
+    
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["<i> Expert Mentoring</i> Motivation.", "  Support."],
+        typeSpeed: 50,
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

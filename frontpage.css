@@ -1,0 +1,608 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    font-family: "Roboto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    min-height: 100vh;
+    
+}
+
+
+
+
+/* Navbar header style starts here */
+
+.navbar{
+    border-bottom:2px solid #004792;
+    height: 10vh;
+    width: 100%;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#004276; 
+    color: #ffffff;
+}
+
+.logo {
+    margin-right:1.5vh;
+}
+.logo img{
+    height: 10vh;
+}
+
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex: 1;
+}
+nav ul li a{
+    padding: 1.1vh 1.2vh;
+    border-radius: 4px;
+    border: 2px solid #ffffff;
+    font-size: 1.1rem;
+    color: #ffffff;
+
+}
+nav ul li a:hover{
+    color:black;
+    height:4vh ;
+    width: 10vw;
+    border-radius: 5px;
+    padding: 1.2vh 1.5vh;
+    border: 1px solid #004276;
+    background-color: #ffffff;
+
+}
+
+.rightside {
+    margin: 0 23px;
+    margin-left: auto;
+}
+/* Login register Button */
+.LoginButton {
+    margin-right: 2vh;
+    padding: 1.2vh 2.5vw;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #004792;  /* Primary blue color */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .LoginButton:hover{
+    background-color: #ffffff;
+    color: #004276;
+  }
+
+
+
+/* The slides (custom content such as images and text) */
+
+.carousel-container {
+    position: relative;
+    width: 100vw;
+    max-width: 100vw;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 1vw;
+}
+
+/* The slides (custom content such as images and text) */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300vw; /* Ensure that the slides container has enough width for all slides */
+}
+
+.slide {
+    width: 100vw; /* Ensure each slide occupies the full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.slide img {
+    width: 100vw;
+    height: auto;
+    border-radius: 1vw;
+}
+
+/* Left and right navigation arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1.5vw;
+    font-size: 2vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    user-select: none;
+    z-index: 10;
+}
+
+.prev {
+    left: 2vw;
+}
+
+.next {
+    right: 2vw;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dots to indicate the current slide */
+.dots {
+    text-align: center;
+    padding: 2vh 0;
+    background: #ddd;
+}
+
+.dot {
+    height: 2vh;
+    width: 2vh;
+    margin: 0 1vw;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+
+
+/* Hero section yha se hai */
+
+.hero {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .hero-left {
+    margin-right: 3vh;
+    height: 30vh;
+    width: 50vw;
+    flex-basis: 40%;
+    padding: 20px;
+  }
+
+  /* Get started button */
+  button[type="submit"] {
+    margin-top: 8vh;
+    background-color: #004792;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0093AF;
+    color: #f0f0f0;
+  }
+  
+  /* right waali image  */
+  .hero-right {
+    flex-basis: 50%;
+    padding: 20px;
+  }
+  
+  .hero-left blockquote {
+    font-size: 24px;
+    font-style: italic;
+    color: #004792;
+  }
+  
+  .hero-left h1 span{
+    color: #004792;
+  }
+  
+  .hero-right img {
+    width: 100%;
+    height:50vh;
+    background-blend-mode:overlay;
+    
+  }
+
+
+  /* top mentors section */
+  .guides-section {
+    width: 90vw;
+    max-width: 1200px;
+    margin: 5vh auto;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3.5vh;
+    margin-bottom: 3vh;
+    color: #004792;
+}
+
+.guides-features {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vh;
+    flex-wrap: wrap;
+}
+
+.guides-features div {
+    margin: 0 2vw;
+    font-size: 2.2vh;
+    color: #0093AF;
+    display: flex;
+    align-items: center;
+}
+
+.icon-check {
+    margin-right: 0.5vw;
+}
+
+.guides-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3vh;
+}
+
+.guide-card {
+    background: #fff;
+    border-radius: 2vh;
+    padding: 3vh 2vw;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.guide-card:hover {
+    transform: translateY(-1vh);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.guide-image {
+    position: relative;
+    flex-shrink: 0;
+    margin-right: 2vw;
+}
+
+.guide-image img {
+    width: 10vw;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.guide-badge {
+    position: absolute;
+    bottom: -1.5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f5b12e;
+    color: white;
+    padding: 0.5vh 2vw;
+    border-radius: 2vh;
+    font-size: 1.8vh;
+    font-weight: bold;
+}
+
+.guide-info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.guide-info h3 {
+    font-size: 2.5vh;
+    margin-bottom: 1vh;
+    color: #333;
+}
+
+.guide-info p {
+    font-size: 2vh;
+    color: #777;
+    margin-bottom: 2vh;
+    line-height: 1.4;
+}
+
+.guide-stats {
+    font-size: 1.8vh;
+    color: #555;
+    margin-bottom: 2vh;
+}
+
+.guide-stats span {
+    margin-right: 2vw;
+}
+
+.view-profile {
+    color: #0082A8;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2vh;
+    display: inline-block;
+}
+
+.view-all-btn {
+    display: inline-block;
+    margin-top: 4vh;
+    padding: 1.5vh 3vw;
+    background-color: #0082A8;
+    color: white;
+    font-size: 2.2vh;
+    border-radius: 2vh;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background-color: #005b73;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .guide-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .guide-image {
+        margin-right: 0;
+        margin-bottom: 2vh;
+    }
+
+    .guide-info {
+        text-align: center;
+    }
+
+    .guide-image img {
+        width: 20vw;
+    }
+
+    .guides-features {
+        flex-direction: column;
+    }
+}
+
+
+  /* after hero section  */
+
+  .features-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.feature-card {
+    text-align: center;
+    width: 22%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid #004276;
+}
+
+.feature-card img {
+    max-width: 50px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature-card p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Faq styling */
+.faq-section {
+    width: 85vw;
+    margin: 5vh auto;
+    padding: 5vh 0;
+    background-color: #ffffff;
+    border-radius: 2vh;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 4vh;
+    margin-bottom: 4vh;
+    color:#004276;
+}
+
+.faq-list {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: #004276;
+    padding: 2vh 3vw;
+    margin-bottom: 2vh;
+    border-radius: 2vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+    background: #0082A8;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.5vh;
+    color: #ffffff;
+}
+
+.faq-icon {
+    font-size: 3vh;
+    color: #ffffff;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 1.5vh;
+    font-size: 2.2vh;
+    line-height: 1.5;
+    color: #e0e0e0;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .faq-item {
+        padding: 3vh 2vw;
+    }
+
+    .faq-question {
+        font-size: 2.2vh;
+    }
+
+    .faq-answer {
+        font-size: 2vh;
+    }
+}
+
+
+
+/* become a mentor */
+
+.mentor-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 5vh 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.mentor-text {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.mentor-text h1 {
+    font-size: 3.5vh;
+    color: #004792;
+    line-height: 1.4;
+    margin-bottom: 1vh;
+}
+
+.mentor-text h1 span {
+    color: #004792;
+}
+
+.mentor-text p {
+    font-size: 2vh;
+    color: #7a7a7a;
+    margin-bottom: 3vh;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #004792;
+    color: white;
+    padding: 1.5vh 3vw;
+    border-radius: 1vh;
+    font-size: 2vh;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #0093AF;
+    color: #f0f0f0;
+}
+
+.mentor-image {
+    flex: 1;
+}
+
+.mentor-image img {
+    margin-left:10vh;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+    .features-section {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+}
