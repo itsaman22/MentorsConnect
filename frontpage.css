@@ -32,7 +32,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#004276; 
+    background-color:#ffffff; 
     color: #ffffff;
 }
 
@@ -55,7 +55,7 @@ nav ul li a{
     border-radius: 4px;
     border: 2px solid #ffffff;
     font-size: 1.1rem;
-    color: #ffffff;
+    color:#004276;
 
 }
 nav ul li a:hover{
@@ -310,8 +310,8 @@ h2 {
 
 .guide-image img {
     width: 10vw;
-    height: auto;
-    border-radius: 50%;
+    height: 25vh;
+    border-radius: 5%;
     object-fit: cover;
 }
 
