@@ -54,7 +54,7 @@ nav ul li a{
     padding: 1.1vh 1.2vh;
     border-radius: 4px;
     border: 2px solid #ffffff;
-    font-size: 1.1rem;
+    font-size: 1.11rem;
     color:#004276;
 
 }
@@ -70,7 +70,7 @@ nav ul li a:hover{
 }
 
 .rightside {
-    margin: 0 23px;
+    margin: 0 23.01px;
     margin-left: auto;
 }
 /* Login register Button */
